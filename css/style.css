@@ -155,3 +155,58 @@ font-weight: bold;
     font-size: 16px;
 
 }
+/* -------------RESPONSIVE NAV-------- */
+
+
+.response-menu{
+    display: none;
+    width: 250px;
+    background:  rgb(228, 241, 241);
+    position: fixed;
+    right:-228px;
+    top: 0;
+    bottom: 0;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.response-menu ul{
+    padding: 20px 0 0 20px;
+    
+}
+.response-menu a{
+    color: black;
+}
+.response-menu::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/burger.png");
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    
+}
+.response-menu:hover{
+    right: 0;
+}
+@media screen and (max-width:1220px){
+    .commercial{
+        background-image: none;
+        padding: 0;
+    }
+}
+@media screen and (max-width:770px){
+    .response-menu{
+        display: block;
+        z-index: 100;
+
+    }
+    .main-nav{
+        display: none;
+    }
+    .commercial {
+        text-align: center;
+     
+    }
+}
