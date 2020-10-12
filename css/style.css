@@ -190,6 +190,7 @@ font-weight: bold;
 .response-menu:hover{
     right: 0;
 }
+ 
 @media screen and (max-width:1220px){
     .commercial{
         background-image: none;
@@ -207,6 +208,16 @@ font-weight: bold;
     }
     .commercial {
         text-align: center;
-     
+    }
+    
+}
+@media screen and (max-width:570px){
+    .footer-contact ul li label{
+        /* text-align: right; */
+        width: 30%;
+    }
+    .footer-contact ul li a{
+        text-align: left;
+        width: 70%;
     }
 }
